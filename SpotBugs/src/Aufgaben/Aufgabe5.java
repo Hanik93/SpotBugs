@@ -1,7 +1,7 @@
 package Aufgaben;
 
-// In diesem Code gibt es drei Fehler. Welche Fehler sind das? Zwei werden von Spotbugs endeckt, der andere nicht.
-// Behebe die Fehler die Spotbugs dir anzeigt.
+// In diesem Code gibt es mehrere Bugs. Analysiere den Code mithilfe von SpotBugs und behebe diese.
+// Welchen Bug hat SpotBugs hier übersehen?
 
 public class Aufgabe5 {
 

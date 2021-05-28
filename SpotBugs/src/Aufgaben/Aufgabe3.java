@@ -1,6 +1,7 @@
 package Aufgaben;
 
-// Welchen Bug könnte SpotBugs hier finden? Analysieren Sie die Aufgabe mithilfe von SpotBugs und versuchen Sie anschließen den Bug zu lösen
+//Welchen Bug könnte SpotBugs hier finden? Analysiere den Code mit SpotBugs und überprüfe ob deine Antwort richtig ist.
+//Finde anschließen eine Lösung für den Bug.
 
 public class Aufgabe3 {
     private int abc;

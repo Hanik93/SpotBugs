@@ -1,13 +1,26 @@
 package Aufgaben;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.Random;
 
-// Analysieren Sie die Aufgabe mithilfe von SpotBugs und versuchen Sie anschließen eine Lösung für den Bug zu finden
+//An welchen Stellen könnte SpotBUgs hier Bugs finden? Analysiere den Code mit SpotBugs und überprüfe ob deine Antwort richtig ist.
+//Finde anschließen eine Lösung für die Bugs.
 public class Aufgabe4 {
-    protected static final SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 
-    public String format(Date date) {
-        return df.format(date);
+    public static void main(String[] args){
+        int x = 2;
+        int y = 5;
+        Random rand = new Random();
+        int value = rand.nextInt(5);
+        String str = "SpotBugs";
+
+        System.out.println(str.substring(3,11));
+
+        double value1 = x / y;
+
+        System.out.println(value1);
+
+
     }
+
 }
+

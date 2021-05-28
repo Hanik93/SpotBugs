@@ -1,29 +1,33 @@
 package Aufgaben;
 
-// SpotBubgs findet nicht immer alle Fehler. An welcher Stelle im Code, könnte ein Fehler auftreten, der das Programm zum Absturz bringt?
+// SpotBugs findet hier keinen Bug. An welcher Stelle im Code könnte trotzdem ein Fehler auftreten?
+
+import java.util.Random;
 
 public class Aufgabe7 {
     public static void main(String[] args) {
+        Random rand = new Random();
+        int value = rand.nextInt(20);
 
-        System.out.println(divide());
+
+
+      System.out.println(getValue(changeValue(value)));
+
     }
 
-    static boolean returnBoolean(){
-        if (System.currentTimeMillis()%2 == 0){
-            return true;
+    static int changeValue(int value){
+        if(value %2 == 0){
+            value += 2;
+        }else{
+            value -= value ;
+            System.out.println(value);
         }
-        else{
-            return false;
-        }
+        return value;
     }
 
-    static int divide(){
-        int x = 1;
-        if(returnBoolean())
-        { x = 0; }
-        else
-        { x = 5; }
-        return (10/x);
+    static int getValue(int newValue){
+        return 25 / newValue;
     }
+
 
 }

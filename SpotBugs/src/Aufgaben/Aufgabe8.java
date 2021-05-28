@@ -1,17 +1,33 @@
 package Aufgaben;
 
-// Welchen Bug könnte SpotBugs hier finden? Analysieren Sie die Aufgabe mithilfe von SpotBugs und versuchen Sie anschließen den Bug zu lösen
+// An welchen Stellen im Code könnte SpotBugs hier Fehler finden? Analysiere den Code mithilfe von SpotBugs und versuche anschließen die Bugs zu lösen
+
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+
 
 public class Aufgabe8 {
 
-    private static void cast2(Double aValue) {
-       Object doubleValue = Double.valueOf(aValue);
-       Long value = (Long) doubleValue;
-        System.out.println("Rounded value: " + value);
+    public static void main(String[] args){
+
+        Integer value = 20;
+        Object newValue = Integer.valueOf(value);
+        System.out.println(newValue);
+
+
+        List<String> list = Arrays.asList("a", "b", "c", "s", "e","d");
+
+        String[] field = getAsArray(list);
+
+
+        for(int i = 0; i<  field.length ; i++){
+            System.out.println(field[i]);
+        }
     }
 
-    public static void main(String[] args) {
-        cast2(1.6);
+    public static String[] getAsArray(Collection<String> c) {
+        return (String[]) c.toArray();
     }
 
 }
